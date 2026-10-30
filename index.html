@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Casa Azahar es una demostración de floristería online con ramos, flores de temporada y carrito de compra.">
+  <meta name="theme-color" content="#263b2d">
+  <title>Casa Azahar | Floristería & Taller Floral</title>
+  <link rel="icon" href="assets/logo-casa-azahar.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="CSS/professional.css">
+  <script src="JS/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <div class="demo-bar">Proyecto demostrativo · Productos, precios y pedidos ficticios</div>
+
+  <header class="site-header" data-header>
+    <div class="shell header-inner">
+      <a class="brand" href="#inicio" aria-label="Casa Azahar, inicio">
+        <img src="assets/logo-casa-azahar.svg" alt="" width="48" height="48">
+        <span><strong>Casa Azahar</strong><small>Floristería & Taller Floral</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" data-menu-toggle><span></span><span></span></button>
+      <nav class="main-nav" aria-label="Navegación principal" data-nav>
+        <a href="#ramos">Ramos</a>
+        <a href="#ocasiones">Ocasiones</a>
+        <a href="#taller">El taller</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <button class="cart-button" type="button" data-cart-open aria-label="Abrir carrito">
+        <span>Mi cesta</span><b data-cart-count>0</b>
+      </button>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" id="inicio">
+      <img class="hero-image" src="assets/hero-casa-azahar.png" alt="Ramos artesanales en el taller floral Casa Azahar" width="1896" height="1024">
+      <div class="hero-shade"></div>
+      <div class="shell hero-content">
+        <p class="eyebrow">Flores con intención · Entrega local</p>
+        <h1>Un gesto bonito<br><em>empieza con flores.</em></h1>
+        <p class="hero-copy">Ramos de temporada preparados a mano en nuestro taller. Elige uno o cuéntanos para quién es.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#ramos">Elegir un ramo <span>↓</span></a>
+          <a class="button button-quiet" href="#personalizado">Crear uno a medida</a>
+        </div>
+        <div class="hero-notes" aria-label="Ventajas">
+          <span><b>01</b> Flores de temporada</span>
+          <span><b>02</b> Preparado a mano</span>
+          <span><b>03</b> Entrega en el día</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="promise-strip" aria-label="Información de compra">
+      <div class="shell promise-grid">
+        <p><span>✦</span><strong>Hecho hoy</strong><small>Cada ramo se prepara bajo pedido</small></p>
+        <p><span>⌁</span><strong>Entrega local</strong><small>Selecciona la fecha al confirmar</small></p>
+        <p><span>♡</span><strong>Con dedicatoria</strong><small>Añade tu mensaje sin coste</small></p>
+      </div>
+    </section>
+
+    <section class="shop section" id="ramos">
+      <div class="shell">
+        <header class="section-heading">
+          <div><p class="eyebrow">La colección de hoy</p><h2>Flores para decir<br><em>lo que importa.</em></h2></div>
+          <p>Trabajamos con flor fresca y composiciones de temporada. Cada ramo es ligeramente distinto: ahí está parte de su belleza.</p>
+        </header>
+
+        <div class="shop-tools">
+          <div class="filters" role="group" aria-label="Filtrar ramos">
+            <button class="active" type="button" data-filter="todos">Todos</button>
+            <button type="button" data-filter="suaves">Tonos suaves</button>
+            <button type="button" data-filter="color">Con color</button>
+            <button type="button" data-filter="elegantes">Elegantes</button>
+          </div>
+          <label class="search"><span>⌕</span><input type="search" placeholder="Buscar flores" aria-label="Buscar flores" data-search></label>
+        </div>
+
+        <div class="product-grid" data-product-grid>
+          <article class="product-card" data-category="suaves" data-name="Ramo Alba rosas ranúnculos">
+            <div class="product-photo sprite sprite-1"><span class="badge">Más elegido</span></div>
+            <div class="product-info"><div><p>Rosas · Ranúnculos · Eucalipto</p><h3>Ramo Alba</h3></div><strong>42 €</strong></div>
+            <button type="button" data-add data-id="alba" data-product="Ramo Alba" data-price="42">Añadir a la cesta <span>+</span></button>
+          </article>
+          <article class="product-card" data-category="color" data-name="Tulipanes de Abril colores">
+            <div class="product-photo sprite sprite-2"></div>
+            <div class="product-info"><div><p>Tulipanes · Flor de cera</p><h3>Tulipanes de Abril</h3></div><strong>34 €</strong></div>
+            <button type="button" data-add data-id="tulipanes" data-product="Tulipanes de Abril" data-price="34">Añadir a la cesta <span>+</span></button>
+          </article>
+          <article class="product-card" data-category="elegantes" data-name="Luz Blanca lirios flores blancas">
+            <div class="product-photo sprite sprite-3"><span class="badge badge-light">Nuevo</span></div>
+            <div class="product-info"><div><p>Lirios · Flor blanca · Verde</p><h3>Luz Blanca</h3></div><strong>48 €</strong></div>
+            <button type="button" data-add data-id="luz-blanca" data-product="Luz Blanca" data-price="48">Añadir a la cesta <span>+</span></button>
+          </article>
+          <article class="product-card" data-category="color" data-name="Jardín Silvestre margaritas flores variadas">
+            <div class="product-photo sprite sprite-4"></div>
+            <div class="product-info"><div><p>Margaritas · Delphinium · Flor silvestre</p><h3>Jardín Silvestre</h3></div><strong>38 €</strong></div>
+            <button type="button" data-add data-id="jardin" data-product="Jardín Silvestre" data-price="38">Añadir a la cesta <span>+</span></button>
+          </article>
+          <article class="product-card" data-category="elegantes" data-name="Ramo Carmín rosas rojas granate">
+            <div class="product-photo sprite sprite-5"><span class="badge">Edición especial</span></div>
+            <div class="product-info"><div><p>Rosas · Dalias · Astilbe</p><h3>Ramo Carmín</h3></div><strong>52 €</strong></div>
+            <button type="button" data-add data-id="carmin" data-product="Ramo Carmín" data-price="52">Añadir a la cesta <span>+</span></button>
+          </article>
+          <article class="product-card" data-category="suaves" data-name="Calma hortensias rosas eucalipto">
+            <div class="product-photo sprite sprite-6"></div>
+            <div class="product-info"><div><p>Hortensia · Rosa blanca · Eucalipto</p><h3>Calma</h3></div><strong>46 €</strong></div>
+            <button type="button" data-add data-id="calma" data-product="Calma" data-price="46">Añadir a la cesta <span>+</span></button>
+          </article>
+        </div>
+        <p class="no-results" data-no-results hidden>No hemos encontrado ese ramo. Prueba con otra búsqueda.</p>
+      </div>
+    </section>
+
+    <section class="occasions section" id="ocasiones">
+      <div class="shell">
+        <p class="eyebrow">Una flor para cada historia</p>
+        <div class="occasion-grid">
+          <article><span>01</span><h3>Cumpleaños</h3><p>Color, energía y una dedicatoria que solo tú podrías escribir.</p><a href="#ramos" data-occasion="color">Ver ramos alegres →</a></article>
+          <article><span>02</span><h3>Amor</h3><p>Flores para celebrar una fecha o convertir cualquier día en especial.</p><a href="#ramos" data-occasion="elegantes">Ver ramos especiales →</a></article>
+          <article><span>03</span><h3>Gracias</h3><p>Un detalle sencillo y bonito para decir mucho sin complicarlo.</p><a href="#ramos" data-occasion="suaves">Ver tonos suaves →</a></article>
+          <article><span>04</span><h3>Porque sí</h3><p>La mejor ocasión también puede ser ninguna. Tú eliges el momento.</p><a href="#ramos" data-occasion="todos">Explorar todo →</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="custom section" id="personalizado">
+      <div class="shell custom-grid">
+        <div class="custom-copy">
+          <p class="eyebrow">Tu ramo, a tu manera</p>
+          <h2>Cuéntanos la ocasión.<br><em>Nosotros ponemos las flores.</em></h2>
+          <p>Elige el presupuesto, la paleta y el estilo. Te proponemos una composición única con las mejores flores disponibles ese día.</p>
+          <a class="button button-primary" href="https://wa.me/34673998497?text=Hola%2C%20he%20visto%20la%20demo%20de%20Casa%20Azahar%20y%20quiero%20informaci%C3%B3n%20sobre%20una%20web%20similar." target="_blank" rel="noopener noreferrer">Pedir un ramo personalizado <span>↗</span></a>
+        </div>
+        <div class="custom-steps">
+          <article><b>1</b><div><h3>Elige el presupuesto</h3><p>Desde 30 €, 45 €, 60 € o una cantidad personalizada.</p></div></article>
+          <article><b>2</b><div><h3>Cuéntanos para quién es</h3><p>Nos ayuda a encontrar el tono y la composición adecuados.</p></div></article>
+          <article><b>3</b><div><h3>Recíbelo o recógelo</h3><p>Preparamos el ramo y acordamos contigo la entrega.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section" id="taller">
+      <div class="shell about-grid">
+        <div><p class="eyebrow">El taller</p><h2>Flores frescas,<br><em>manos expertas.</em></h2></div>
+        <div><p>Casa Azahar nace como una floristería de barrio contemporánea: cercana, cuidadosa y con una forma más sencilla de encargar flores.</p><p>Seleccionamos cada tallo y componemos cada ramo en el día. No hacemos dos exactamente iguales.</p></div>
+        <blockquote>“La naturaleza nunca repite una flor. Nosotros tampoco repetimos un ramo.”</blockquote>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contacto">
+    <div class="shell footer-main">
+      <div><a class="brand brand-footer" href="#inicio"><img src="assets/logo-casa-azahar.svg" alt="" width="52" height="52"><span><strong>Casa Azahar</strong><small>Floristería & Taller Floral</small></span></a><p>Proyecto demostrativo creado por Graciani Web Studio. No representa una floristería real.</p></div>
+      <div><small>Horario de muestra</small><p>Lunes a sábado<br>09:00–20:30</p></div>
+      <div><small>Contacto</small><a href="tel:+34673998497">673 998 497</a><a href="mailto:fernandoga89@gmail.com">fernandoga89@gmail.com</a></div>
+      <div><small>Enlaces</small><a href="#ramos">Tienda</a><a href="#taller">El taller</a><a href="#inicio">Volver arriba ↑</a></div>
+    </div>
+    <div class="shell footer-bottom"><span>© <span data-year></span> Casa Azahar · Demo</span><span>Diseño para negocios locales</span></div>
+  </footer>
+
+  <div class="overlay" data-overlay hidden></div>
+  <aside class="cart-drawer" data-cart aria-labelledby="cart-title" aria-hidden="true">
+    <header><div><p class="eyebrow">Tu selección</p><h2 id="cart-title">La cesta</h2></div><button type="button" data-cart-close aria-label="Cerrar carrito">×</button></header>
+    <div class="cart-body" data-cart-items></div>
+    <div class="cart-empty" data-cart-empty><span>✿</span><h3>Tu cesta está esperando flores</h3><p>Añade uno de nuestros ramos para empezar.</p><button type="button" data-cart-close>Ver la colección</button></div>
+    <footer class="cart-footer" data-cart-footer hidden>
+      <div><span>Subtotal</span><strong data-cart-total>0 €</strong></div>
+      <p>Entrega y fecha se acuerdan al confirmar.</p>
+      <button type="button" class="checkout" data-checkout>Preparar pedido por WhatsApp <span>↗</span></button>
+      <small>Pedido de demostración. No se realiza ningún cobro.</small>
+    </footer>
+  </aside>
+
+  <div class="toast" role="status" aria-live="polite" data-toast>Ramo añadido a la cesta</div>
+</body>
+</html>
